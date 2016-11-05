@@ -11,11 +11,13 @@ mongoose.Promise = bluebird;
 const passport = require('passport');
 
 
-const port = 3000;
+const port = process.env.PORT || 3000;
+
 
 //connect the database
 if (!process.argv[2]) {
-  mongoose.connect('mongodb://localhost/drawmie');
+  const db = process.env.MONGODB_URI || 'mongodb://localhost/drawmie'
+  mongoose.connect(db);
   mongoose.connection.on('error', console.error.bind(console, 'connection error:'));
   mongoose.connection.on('connected', function callback () {
     console.log('Mongoose connection open on mongodb://localhost/drawmie!');
