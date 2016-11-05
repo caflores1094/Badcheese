@@ -309,13 +309,18 @@ h5 {
 }
 
 .profile-container{
-  /*border: 1px solid red;*/
   float: left;
   box-sizing: border-box;
   width: 30%;
   text-align: center;
   padding-left: 40px;
+}
 
+.fullName{
+  color: white;
+  font-family: arial;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .rightside-container{
@@ -391,6 +396,7 @@ h5 {
   border: 1px solid rgba(255,255,255,0.4);
   background: rgba(0,0,0,0.3);
 }
+
 .build-new-board .search-user-radio{
   display: inline-block;
   /*width: 38% !important;*/
@@ -400,6 +406,11 @@ h5 {
 .build-new-board .search-user-text{
   display: inline-block !important;
   width: 40% !important;
+}
+
+button:active {
+  background: rgba(0,0,0,0.01) !important;
+
 }
 
 .toggleSessionsView {
@@ -466,6 +477,11 @@ h5 {
   text-align: left;
 }
 
+.sessionListButton:hover {
+  background: rgba(0,0,0,0.5);
+
+}
+
 .sessionListButton p{
   padding-top: 8px;
   margin: 0;
@@ -481,6 +497,10 @@ h3{
   border-bottom: 1px solid white;
   display: inline-block;
   margin: 0
+}
+
+button:hover{
+  background: rgba(0,0,0,.5);
 }
 
 
